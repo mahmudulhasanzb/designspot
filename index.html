@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Design Spot</title>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <img src="assets/logo.png" alt="Design Spot logo" class="logo">
+        <span class="brand-name">Design Spot</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>We craft bold visual identities for growth-minded brands.</h1>
+          <p class="lead">Design Spot is a boutique graphic design studio specializing in brand identity, packaging, and digital experiences.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#contact">Start a Project</a>
+            <a class="btn btn-ghost" href="#work">View Work</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <!-- Decorative SVG or image -->
+          <img src="assets/hero-graphic.svg" alt="Abstract design shapes" aria-hidden="true">
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="work section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Selected Work</h2>
+          <p class="muted">A curated selection of recent projects showcasing identity, packaging and digital design.</p>
+        </div>
+        <div class="portfolio-grid">
+          <!-- Portfolio items -->
+          <article class="card">
+            <button class="thumb" data-title="Brand Identity — Nova Coffee" aria-label="Open Nova Coffee project">
+              <img src="assets/nova-coffee.png" alt="Project thumbnail">
+            </button>
+            <div class="card-body">
+              <h3>Brand Identity — Nova Coffee</h3>
+              <p class="muted">Full brand system including logo, packaging and shop signage.</p>
+            </div>
+          </article>
+          <article class="card">
+            <button class="thumb" data-title="Packaging — Lumen Skincare" aria-label="Open Lumen Skincare project">
+              <img src="assets/skincare.jpg" alt="Project thumbnail">
+            </button>
+            <div class="card-body">
+              <h3>Packaging — Lumen Skincare</h3>
+              <p class="muted">Minimal, sustainable packaging for a premium skincare line.</p>
+            </div>
+          </article>
+          <article class="card">
+            <button class="thumb" data-title="Web Design — Atlas Studio" aria-label="Open Atlas Studio project">
+              <img src="assets/web.jpg" alt="Project thumbnail">
+            </button>
+            <div class="card-body">
+              <h3>Web Design — Atlas Studio</h3>
+              <p class="muted">Responsive web experience for a creative production studio.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox modal -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <div class="lightbox-inner" role="dialog" aria-modal="true" aria-label="Project preview">
+        <button class="lightbox-close" aria-label="Close preview">✕</button>
+        <div class="lightbox-content">
+          <img src="" alt="" id="lightbox-image">
+          <div class="lightbox-meta">
+            <h3 id="lightbox-title"></h3>
+            <p class="muted">Project details and short description.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="services" class="services section">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="services-grid">
+          <div class="service">
+            <h3>Brand Identity</h3>
+            <p>Create logos, style guides and brand systems that scale.</p>
+          </div>
+          <div class="service">
+            <h3>Packaging</h3>
+            <p>Strategic packaging design with production-ready artwork.</p>
+          </div>
+          <div class="service">
+            <h3>Digital</h3>
+            <p>Website and UI design that communicates clearly and converts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div class="container about-inner">
+        <div class="about-copy">
+          <h2>About Design Spot</h2>
+          <p>We combine strategic thinking with eye-catching visuals to help brands stand out. Our team is small, nimble, and experienced across print and digital mediums.</p>
+          <ul class="about-list">
+            <li>5+ years in business</li>
+            <li>Clients worldwide</li>
+            <li>Specialists in branding & packaging</li>
+          </ul>
+        </div>
+        <div class="about-image">
+          <img src="assets/about-illustration.svg" alt="Team illustration">
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div class="container contact-inner">
+        <div class="contact-form">
+          <h2>Let's work together</h2>
+          <p class="muted">Tell us about your project and we'll get back within 48 hours.</p>
+          <form id="contactForm">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required>
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="form-row">
+              <button class="btn btn-primary" type="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+        <div class="contact-info">
+          <h3>Contact</h3>
+          <p class="muted">designspotgfx@gmail.com</p>
+          <p class="muted">Based in: Remote / Global</p>
+          <div class="socials">
+            <a href="https://facebook.com/designspotgfx" aria-label="Facebook">Facebook</a>
+            <a href="https://linkedin.com/company/designspotgfx" aria-label="LinkedIn">LinkedIn</a>
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="Behance">Behance</a>
+            <a href="#" aria-label="Dribbble">Dribbble</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Design Spot — All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="#privacy">Privacy</a>
+        <a href="#terms">Terms</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

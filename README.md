@@ -15,7 +15,10 @@ How to run:
 
 Notes & next steps:
 - Replace SVG placeholders with real project thumbnails.
-- Hook contact form to an email service or backend.
+- Hook the contact form to an email service or backend.
 - Add SEO meta tags, favicon, and optimized images.
 
 Enjoy! — Design Spot UI scaffold
+
+## Live Link:  
+https://mahmudulhasanzb.github.io/designspot/
